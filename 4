@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aquamarine;
+            text-align: justify;
+            }
+        h1{
+            text-align: center;
+
+        }
+       
+        .box{
+            text-align: left;
+            color: rgb(227, 248, 109);
+            position: absolute;
+            top: 70%;
+            left: 17%;
+            transform: translate(-50%,-50%);
+            background-color: rgba(5, 5, 5, 0.6);
+            padding: 7px;
+            border-radius: 7px;
+            height: 490px;
+            width: 30%;
+            
+        }
+        .inputBox{
+            position:relative;
+        }
+        .inputUser{
+            background: none;
+            border: none;
+            border-bottom: 1px solid rgb(15, 14, 14);
+            outline: none;
+            color: rgb(26, 25, 25);
+            font-size: 15px;
+            width: 90%;
+            letter-spacing: 2px;
+        }
+        legend{
+            border: 1px solid rgb(245, 184, 16);
+            padding: 10px;
+            text-align: center;
+            background-color: rgb(15, 13, 13);
+            border-radius: 8px;
+        }
+          
+        fieldset{
+            border: 3px solid rgb(245, 184, 16);
+        }
+        input{
+            background-image: linear-gradient(to right,rgb(238, 216, 15), rgb(226, 240, 34));
+            width: 100%;
+            border: none;
+            padding: 15px;
+            color: rgb(7, 7, 7);
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .labelInput{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none;
+            transition: .5s;
+        }
+        .inputUser:focus ~ .labelInput,
+        .inputUser:valid ~ .labelInput{
+            top: -20px;
+            font-size: 12px;
+            color: rgb(17, 17, 17);
+        }
+      
+    </style>
+</head>
+<body>
+    <h1>Ajuda e Doações para Projetos de Tartarugas Marinhas</h1>
+
+    <p>
+        As tartarugas marinhas são espécies incríveis e vulneráveis que habitam nossos oceanos. Elas enfrentam ameaças constantes, como a poluição, a pesca predatória e a destruição de seus habitats. Mas você pode fazer a diferença e ajudar a preservar essas maravilhosas criaturas!
+
+Faça uma Doação
+
+Sua doação é essencial para financiar projetos de conservação de tartarugas marinhas em todo o mundo. Esses projetos trabalham para proteger e reabilitar as tartarugas, monitorar seus ninhos, promover a conscientização e educar as comunidades locais sobre a importância da conservação marinha
+    </p>
+
+
+    <div class="box">
+        <form action="">
+            <fieldset>
+            <legend><b>Fórmulário de Ajuda</b></legend>
+            <br>
+             <div class="inputBox">
+            <input type="text" name="nome" id="nome" class="inputUser" required>
+            <label for="nome"  class="labelInput">Nome completo</label>
+            </div>
+            <br><br>
+             <div class="inputBox">
+            <input type="text" name="cfep" id="cfep" class="inputUser" required>
+            <label for="cfep" class="labelInput">email</label>
+            </div>
+            <br><br>
+            <div class="inputBox">
+                <input type="text" name="cfep" id="cfep" class="inputUser" required>
+                <label for="cfep" class="labelInput">Qual projeto ? </label>
+                </div>
+            <br><br>
+            <div class="inputBox">
+                <input type="text" name="cfep" id="cfep" class="inputUser" required>
+                <label for="cfep" class="labelInput">Valor doado</label>
+                </div>
+            <br><br>
+            <a href="file:///C:/Users/ggbie/OneDrive/%C3%81rea%20de%20Trabalho/front/1.html" target="_blank"><input type="button" value=" Mandar e Voltar pra  1ª Pagina" ></a>
+    </body>
+    </html>
