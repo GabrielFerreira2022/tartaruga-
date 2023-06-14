@@ -7,115 +7,100 @@
     <title>Document</title>
     <style>
         body{
-            background-color: aquamarine;
-            text-align: justify;
-            }
+            background-color: #86faf0;
+        font-family:'Times New Roman', Times, serif
+        }
+        .container {
+      text-align: center;
+    }
+        p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
         h1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             text-align: center;
+        }
+ 
+        form {
+        display: inline-block;
+      width: 250px;
+      border: 1px solid #070606;
+      padding: 15px;
+      border-radius: 15px;
+      margin-top: 40px;
+    }
+    input[type="text"],
+    input[type="email"] {
+      width: 97%;
+      padding: 5px;
+      margin-bottom: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    input[type="submit"] {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #030303;
+      color: rgb(68, 255, 239);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .bottom-left-link {
+        position: fixed;
+          bottom: 20px;
+          left: 20px;
+          display: flex;
+          align-items:flex-end;
 
         }
-       
-        .box{
-            text-align: left;
-            color: rgb(227, 248, 109);
-            position: absolute;
-            top: 70%;
-            left: 17%;
-            transform: translate(-50%,-50%);
-            background-color: rgba(5, 5, 5, 0.6);
-            padding: 7px;
-            border-radius: 7px;
-            height: 490px;
-            width: 30%;
-            
+        .button {
+            margin-top: 100px;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: #070707;
+          color: rgb(73, 233, 245);
+          text-decoration: none;
+          border-radius: 4px;
+          transition: background-color 0.3s;
         }
-        .inputBox{
-            position:relative;
+        .button:hover {
+          background-color: #3afdcc;
         }
-        .inputUser{
-            background: none;
-            border: none;
-            border-bottom: 1px solid rgb(15, 14, 14);
-            outline: none;
-            color: rgb(26, 25, 25);
-            font-size: 15px;
-            width: 90%;
-            letter-spacing: 2px;
-        }
-        legend{
-            border: 1px solid rgb(245, 184, 16);
-            padding: 10px;
-            text-align: center;
-            background-color: rgb(15, 13, 13);
-            border-radius: 8px;
-        }
-          
-        fieldset{
-            border: 3px solid rgb(245, 184, 16);
-        }
-        input{
-            background-image: linear-gradient(to right,rgb(238, 216, 15), rgb(226, 240, 34));
-            width: 100%;
-            border: none;
-            padding: 15px;
-            color: rgb(7, 7, 7);
-            font-size: 15px;
-            cursor: pointer;
-            border-radius: 10px;
-        }
-        .labelInput{
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            pointer-events: none;
-            transition: .5s;
-        }
-        .inputUser:focus ~ .labelInput,
-        .inputUser:valid ~ .labelInput{
-            top: -20px;
-            font-size: 12px;
-            color: rgb(17, 17, 17);
-        }
+   
+
       
     </style>
 </head>
 <body>
-    <h1>Ajuda e Doações para Projetos de Tartarugas Marinhas</h1>
+    <div class="container">
+    <h1>Ajuda a Projetos de Tartaruga Marinha</h1>
+  
+    <p>Você pode fazer a diferença na preservação das tartarugas marinhas! Essas criaturas incríveis enfrentam ameaças constantes de perda de habitat, poluição e captura acidental. Ao apoiar os projetos de conservação das tartarugas marinhas, você contribui diretamente para a proteção e sobrevivência dessas espécies fascinantes.
 
-    <p>
-        As tartarugas marinhas são espécies incríveis e vulneráveis que habitam nossos oceanos. Elas enfrentam ameaças constantes, como a poluição, a pesca predatória e a destruição de seus habitats. Mas você pode fazer a diferença e ajudar a preservar essas maravilhosas criaturas!
+        As doações desempenham um papel fundamental no financiamento de pesquisas científicas, programas de educação, monitoramento das praias de desova e medidas de conservação. Com sua ajuda, podemos garantir que as tartarugas marinhas tenham praias seguras para desovar, habitats saudáveis para se alimentar e uma chance real de se recuperar das ameaças que enfrentam. 
+        Sua doação permitirá que os projetos de conservação trabalhem no monitoramento das populações de tartarugas marinhas, na reabilitação de animais feridos, no desenvolvimento de estratégias de conservação e na conscientização da comunidade local e de visitantes sobre a importância de proteger essas espécies magníficas.</p>
+    
+    <form action="file:///C:/Users/ggbie/OneDrive/%C3%81rea%20de%20Trabalho/front/1.html">
+      <label for="nome">NOME:</label>
+      <input type="text" id="nome" name="nome" required><br><br>
+      
+      <label for="email">EMAIL:</label>
+      <input type="email" id="email" name="email" required><br><br>
 
-Faça uma Doação
+      <label for="nome">VALOR:</label>
+      <input type="text" id="nome" name="Valor" required><br><br>
+      
+    <input type="submit" value="Enviar">
+    </form>
+</div>
 
-Sua doação é essencial para financiar projetos de conservação de tartarugas marinhas em todo o mundo. Esses projetos trabalham para proteger e reabilitar as tartarugas, monitorar seus ninhos, promover a conscientização e educar as comunidades locais sobre a importância da conservação marinha
-    </p>
+    <div class="button-left-link">
+        <a href="file:///C:/Users/ggbie/OneDrive/%C3%81rea%20de%20Trabalho/front/2.html" class="button">Pagina de Curiosidades</a>
+        <a href="file:///C:/Users/ggbie/OneDrive/%C3%81rea%20de%20Trabalho/front/3.html" class="button">Pagina de Projetos </a>
+    </div>
 
-
-    <div class="box">
-        <form action="">
-            <fieldset>
-            <legend><b>Fórmulário de Ajuda</b></legend>
-            <br>
-             <div class="inputBox">
-            <input type="text" name="nome" id="nome" class="inputUser" required>
-            <label for="nome"  class="labelInput">Nome completo</label>
-            </div>
-            <br><br>
-             <div class="inputBox">
-            <input type="text" name="cfep" id="cfep" class="inputUser" required>
-            <label for="cfep" class="labelInput">email</label>
-            </div>
-            <br><br>
-            <div class="inputBox">
-                <input type="text" name="cfep" id="cfep" class="inputUser" required>
-                <label for="cfep" class="labelInput">Qual projeto ? </label>
-                </div>
-            <br><br>
-            <div class="inputBox">
-                <input type="text" name="cfep" id="cfep" class="inputUser" required>
-                <label for="cfep" class="labelInput">Valor doado</label>
-                </div>
-            <br><br>
-            <a href="file:///C:/Users/ggbie/OneDrive/%C3%81rea%20de%20Trabalho/front/1.html" target="_blank"><input type="button" value=" Mandar e Voltar pra  1ª Pagina" ></a>
     </body>
     </html>
