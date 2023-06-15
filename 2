@@ -4,70 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tartarugas Marinhas</title>
-
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-    }
-
-    #video-background {
-      position: fixed;
-      right: 0;
-      bottom: 0;
-      min-width: 100%;
-      min-height: 100%;
-      width: auto;
-      height: auto;
-      z-index: -1;
-      opacity: 0.8;
-    }
-
-    .content {
-      text-align: center;
+    <title>Document</title>
+    <style>
+        body {
+      background-color: #86faf0;
+      font-size: 17px;
+        }
+        .container {
+          width: 800px;
+          margin: 0 auto;
+          text-align: center;
+        }
+        .top-right-links {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+        }
+        .top-right-links a {
+          display: block;
+          margin-bottom: 10px;
+        }
+        .bottom-left-link {
       position: absolute;
-      top: 10%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: rgb(10, 10, 10);
-      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    }
-    .button {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      display: inline-block;
-      background-color: #f8e80c;
-      color: rgb(8, 8, 8);
-      padding: 10px 20px;
-      font-size: 18px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-      position: fixed;
-      bottom: 5px;
-      right: 5px;
-      text-decoration: none;
+      bottom: -300px;
+      left: 10px;
+        }
+        .button {
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: #050505;
+          color: rgb(52, 96, 243);
+          text-decoration: none;
+          border-radius: 4px;
+          transition: background-color 0.3s;
+        }
+        .button:hover {
+          background-color: #45a049;
+        }
+        h1{
+          font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+        .imagem3{
+    transition: all 0.5s;
+    cursor: pointer;
     }
 
-    .button:hover {
-      background-color: #060706;
+.imagem3:hover{
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
     }
-  </style>
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .image-container img {
+      margin: 0 10px;
+    }
+      </style>
 </head>
 <body>
-  <video id="video-background" autoplay loop muted>
-    <source src="video 1.mp4" type="video/mp4">
-  </video>
+    <div class="container">
+        <h1>Homenagem ao Dia das Tartarugas Marinhas</h1>
+        <div class="top-right-links">
+          <a href="file:///C:/Users/ggbie/OneDrive/%C3%81rea%20de%20Trabalho/front/3.html" class="button">Projetos</a>
+          <a href="file:///C:/Users/ggbie/OneDrive/%C3%81rea%20de%20Trabalho/front/4.html" class="button">Ajudas</a>
+        </div>
+        <p>As tartarugas marinhas são animais aquáticos e marinhos, subdivididos em duas famílias: a Cheloniidae e Dermochelyidae. Nesta, encontramos uma única espécie: a tartaruga de couro (Dermochelys coriacea), nome este que se refere à presença de tecido semelhante a couro, ao invés de carapaça coberta por placas. Já na Família Cheloniidae, encontramos animais com tal escudo protetor, com essas caraterísticas, sendo eles: tartaruga de pente (Eretmochelys imbricata), aruanã (Chelonia mydas), oliva (Lepidochelys olivacea), cabeçuda (Caretta caretta), tartaruga-flatback (Natator depressus) e kemps ridley (Lepidochelys kempii). Todas elas, exceto as duas últimas, são encontradas no Brasil.
 
-  <div class="content">
-    <h1>Dia Internacional das Tartarugas Marinhas</h1>
-    <h2>DIA 16 DE JUNHO </h2>
-  </div>
-  <a href="file:///C:/Users/ggbie/OneDrive/%C3%81rea%20de%20Trabalho/front/2.html" class="button">Pagina de Curiosidades</a>
-  <button</button>
-
+          Machos e fêmeas são muito semelhantes entre si, podendo ser diferenciados, a olho nu, somente na fase adulta: momento este em que os machos apresentam rabo e unhas bastante desenvolvidos. A maioria destes animais é onívora, embora algumas consumam unicamente alimentos de origem animal.
+        </p>
+        <div class="image-container">
+          <img class="imagem3" src="1.jfif" alt="Tartaruga 1" width="400" height="200">
+          <img class="imagem3"  src="3.jpg" alt="Tartaruga 1" width="400" height="200">
+        </div>
+        <div class="bottom-left-link">
+          <a href="file:///C:/Users/ggbie/OneDrive/%C3%81rea%20de%20Trabalho/front/1.html" class="button">Pagina de entrada</a>
+        </div>
+        <p>Apesar de uma única tartaruga ser capaz de depositar um grande número de ovos, somente 0,1% dos filhotes conquistarão a vida adulta. Nos primeiros momentos de sua vida, já estão sujeitos à predação por aves, lagartos e caranguejos; e também por animais carnívoros encontrados no mar. Quando adultos, podem ser capturados por seres humanos, visando à utilização de sua carne e ovos na alimentação; e sua carapaça na confecção de artefatos. Indiretamente, a poluição, destruição de hábitats, acúmulo de material plástico no mar, pesca acidental, dentre outros fatores, são responsáveis pela morte de tais animais, elucidando o porquê de todas as espécies terem suas populações em declínio.
+        </p>
+      <img class="imagem3" src="2.jpg" alt="Tartaruga 2" width="400" height="200">
+      </div>
 </body>
 </html>
